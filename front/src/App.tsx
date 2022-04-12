@@ -1,17 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home'
-import About from './components/About'
+import Login from './components/Login'
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/Login' element={<Login />}/>
+    </Routes>
   );
 }
 
